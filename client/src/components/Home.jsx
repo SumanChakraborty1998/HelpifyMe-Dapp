@@ -62,7 +62,7 @@ export const Home = () => {
         )
       ).wait();
       // .then(() => window.location.reload());
-      console.log(factoryInstance);
+      //   console.log(factoryInstance);
       // getAllFunds();
       setInteractingToBlockChain(false);
     } else {
@@ -88,7 +88,7 @@ export const Home = () => {
       ).toNumber();
       let funds = [];
 
-      console.log(totalFundsCount);
+      //   console.log(totalFundsCount);
       setInteractingToBlockChain(true);
 
       for (let i = 0; i < totalFundsCount; i++) {
@@ -108,9 +108,9 @@ export const Home = () => {
           await fundInstance.minimumDonation()
         ).toNumber();
         const deadline = (await fundInstance.deadline()).toNumber();
-        console.log(deadline);
+        // console.log(deadline);
         const targetFund = (await fundInstance.targetFund()).toString();
-        console.log(targetFund);
+        // console.log(targetFund);
         const description = await fundInstance.description();
         const image = await fundInstance.image();
         const collectedAmount = (
@@ -140,7 +140,7 @@ export const Home = () => {
   // useEffect(() => handleConnectToWallet(), []);
   // useEffect(() => getAllFunds(), []);
   // console.log("Wallet Address", walletAddress);
-  console.log("All Fund Addresses", allFunds);
+  //   console.log("All Fund Addresses", allFunds);
 
   return (
     <div>

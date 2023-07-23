@@ -68,7 +68,7 @@ export const Fund = ({ createNewFund }) => {
     }
   };
 
-  console.log(description, targetFund, minimumDonation, deadline, image);
+  //   console.log(description, targetFund, minimumDonation, deadline, image);
 
   return (
     <Box
